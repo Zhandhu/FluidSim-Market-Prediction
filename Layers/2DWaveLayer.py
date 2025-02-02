@@ -74,4 +74,4 @@ class simLayer(nn.Module):
             self.v[:, 0, :, :] = 0
             self.v[:, -1, :, :] = 0
 
-        return torch.reshape(p[:, -1, :, :], (p.size(dim=0), p.size(dim=2), p.size(dim=3)))
+        return torch.reshape(p[:, -2, :, :], (p.size(dim=0), p.size(dim=2), p.size(dim=3)))
